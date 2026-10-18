@@ -1,0 +1,9 @@
+# Company Directory – Design Memo
+
+For this assignment, I created a company directory using a binary tree in Python. Each employee is represented by an EmployeeNode that stores their name and has two pointers, left and right. The TeamTree class manages the structure, starting with the team lead at the root.
+
+Recursive insertion works by starting at the root and checking if the current employee matches the manager's name. If it matches, the program checks whether the requested left or right position is available. If the position is empty, the new employee is added there. If the manager's name does not match, the function continues searching through the left and right branches until it finds the correct manager.
+
+One challenge I faced was making sure the program found the correct manager without stopping too early. Since employees can be located at different levels of the tree, I had to make sure the recursive function searched both branches. Another challenge was handling situations where a position was already taken or the manager did not exist. Adding error messages helped make the program easier to understand and use.
+
+I think trees are useful in real-world systems because they organize information based on relationships. For example, companies can use trees to represent reporting structures, while computers use them for folders and files. Overall, this assignment helped me better understand recursion and how trees can organize hierarchical information.
